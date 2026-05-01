@@ -7,7 +7,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class ConfigFile {
+public abstract class ConfigFile {
 
 	private final JavaPlugin plugin;
 	private File file;
