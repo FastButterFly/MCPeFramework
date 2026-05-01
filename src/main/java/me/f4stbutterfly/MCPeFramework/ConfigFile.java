@@ -25,4 +25,12 @@ public abstract class ConfigFile {
 		}
 		data = YamlConfiguration.loadConfiguration(file);
 	}
+
+	public void save() throws IOException {
+		data.save(file);
+	}
+
+	public void reload() {
+		YamlConfiguration.loadConfiguration(file);
+	}
 }
